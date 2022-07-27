@@ -25,3 +25,5 @@ Cuối cùng thì xem flag thôi !!
 
 ![alt text](https://github.com/bananNat/Writeups/blob/main/FPTU%20Hacking%20CTF%202022/Rota/images/6.png)
 
+## Reference
+[Decrypt script](https://kcsc-club.github.io/2021/08/30/kma-ctf-02-2021/#REVERSE)
