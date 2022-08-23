@@ -12,3 +12,9 @@ ngoại địa phận vương quốc Anh.
 
 Vậy tất cả mọi thứ đều đã có đầy đủ mình vào google map tìm Gibralta ở đâu tìm các quán pub, club hay restaurant ở đây có chữ Arms trong tên. Và không tốn nhiều thời
 gian lắm, nó ở đây.
+
+![alt text](https://github.com/bananNat/Writeups/blob/main/LITCTF%202022/Osint/geoguessrwarmup/1.png)
+
+Hình ảnh từ chế độ dạo phố gg map
+
+![alt text](https://github.com/bananNat/Writeups/blob/main/LITCTF%202022/Osint/geoguessrwarmup/2.png)
