@@ -20,7 +20,7 @@ Sau đó mình đem 2 chuỗi này decode trên [cyberchef](https://gchq.github.
 
 Mình thử nhập cả username và password đều là _admin_. Lúc này khi chương trình chạy đến break point của mình register RDI đang giữ đoạn chuỗi base64 ban nãy đồng thời register RDX cũng đang giữ một đoạn base64 gì đó. Ok và mọi thứ càng sáng tỏ hơn khi ngay phía dưới đó là một đoạn lệnh so sánh giá trị của 2 chuỗi base64 này từ `edx` và `edi`.
 
-![alt text](https://github.com/bananNat/Writeups/blob/main/GDUCTF%202022/RE/Not%20keygen/Images/5.png)
+![alt text](https://github.com/bananNat/Writeups/blob/main/GDUCTF%202022/RE/Not%20keygen/Images/6.png)
 
 Lúc này mình cũng khá chắc là 2 đoạn base64 tìm thấy là username và password rồi nhưng mà tại sao ban nãy decode không được. Thế là mình quay lại cyberchef vẫn là decode bằng base64 nhưng thử hết các bảng chữ cái. Và bingo đến khi mình chọn cái `z64` thì nó đã decode ra một đoạn có nghĩa.
 
