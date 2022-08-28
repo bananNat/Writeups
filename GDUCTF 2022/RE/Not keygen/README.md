@@ -1,6 +1,6 @@
 # Not keygen
 
-Ban đầu mình cho chạy thử file exe đề cho thì đây là một chương trình check username và password.
+Ban đầu mình cho chạy thử [file](https://github.com/bananNat/Writeups/blob/main/GDUCTF%202022/RE/Not%20keygen/Source/chall2.exe) exe đề cho thì đây là một chương trình check username và password.
 
 ![alt text](https://github.com/bananNat/Writeups/blob/main/GDUCTF%202022/RE/Not%20keygen/Images/1.png)
 
