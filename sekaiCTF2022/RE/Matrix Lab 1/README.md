@@ -100,3 +100,24 @@ Hàm này rất quan trọng vì nó dùng để mã hóa flag của chúng ta. 
 - Ký tự đầu tiên lấy bắt đầu từ index n2 là 5 và sau mỗi vòng for lùi dần về 0
 - Ký tự thứ hai lấy bắt đầu từ index length là 6 và sau mỗi vòng for thì tăng dần lên 11
 - Sau mỗi vòng for tăng i lên 2 đơn vị
+
+Ở vòng for thứ 2, ta đem từng ký tự của data đi xor với n (trên code khai báo thêm `array2` rồi trỏ vào `data` nên thay đổi `array2` cũng là thay đổi `data`). Cuối cùng return chuỗi `data` 12 ký tự đã được mã hóa.
+
+Cuối cùng đến với nhân vật chính của chúng ta hàm `solve`
+
+```java
+public static boolean solve(final String s) {
+        final char[][] transform = transform(s.toCharArray(), Sekai.length);
+        for (int i = 0; i <= Sekai.length / 2; ++i) {
+            for (int j = 0; j < Sekai.length - 2 * i - 1; ++j) {
+                final char c = transform[i][i + j];
+                transform[i][i + j] = transform[Sekai.length - 1 - i - j][i];
+                transform[Sekai.length - 1 - i - j][i] = transform[Sekai.length - 1 - i][Sekai.length - 1 - i - j];
+                transform[Sekai.length - 1 - i][Sekai.length - 1 - i - j] = transform[i + j][Sekai.length - 1 - i];
+                transform[i + j][Sekai.length - 1 - i] = c;
+            }
+        }
+        return "oz]{R]3l]]B#50es6O4tL23Etr3c10_F4TD2".equals( encrypt(getArray(transform, 0, 5), 2) + encrypt(getArray(transform, 1, 4), 1) + encrypt(getArray(transform, 2, 3), 0)));
+    }
+```
+
