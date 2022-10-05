@@ -82,7 +82,7 @@ public class Sekai
                 transform[i + j][Sekai.length - 1 - i] = c;
             }
         }
-        return "oz]{R]3l]]B#50es6O4tL23Etr3c10_F4TD2".equals(invokedynamic(makeConcatWithConstants:(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;, encrypt(getArray(transform, 0, 5), 2), encrypt(getArray(transform, 1, 4), 1), encrypt(getArray(transform, 2, 3), 0)));
+        return "oz]{R]3l]]B#50es6O4tL23Etr3c10_F4TD2".equals( encrypt(getArray(transform, 0, 5), 2) + encrypt(getArray(transform, 1, 4), 1) + encrypt(getArray(transform, 2, 3), 0)));
     }
     
     static {
