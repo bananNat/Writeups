@@ -1,5 +1,5 @@
 # Matrix Lab 1
-
+![alt-text](https://github.com/bananNat/Writeups/blob/main/sekaiCTF2022/RE/Matrix%20Lab%201/Images/1.png)
 Đề cho mình một file [class java](https://github.com/bananNat/Writeups/blob/main/sekaiCTF2022/RE/Matrix%20Lab%201/Source/Matrix_Lab_1.class) là code java đã được compiled nên mình dùng [tool](http://www.javadecompilers.com/) này để decompiled nó lại để xem code nó như thế nào. Đây là code java sau khi đã được decompiled: [source](https://github.com/bananNat/Writeups/blob/main/sekaiCTF2022/RE/Matrix%20Lab%201/Source/Matrix_Lab_1.java)
 
 Mình bắt đầu đọc code và phân tích từng function xem chương trình này chạy như thế nào.
