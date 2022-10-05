@@ -93,3 +93,10 @@ public static String encrypt(final char[] array, final int n) {
         return String.valueOf(data);
     }
 ```
+
+Hàm này rất quan trọng vì nó dùng để mã hóa flag của chúng ta. Hàm này nhận vào mảng ký tự `array` và số n rồi trả về chuỗi `data` được convert từ char array sang string sau khi đã mã hóa. Đầu tiên mảng data được khai báo có 12 ký tự; n2 có giá trị bằng 5 và length bằng 6, 2 biến này dùng để đánh dấu vị trí để lấy ký tự từ `array` ở vòng for sau. Vòng for sau nhằm điền các ký tự từ `array` vào `data` theo quy tắc sau:
+
+- Mỗi vòng for điền 2 ký tự
+- Ký tự đầu tiên lấy bắt đầu từ index n2 là 5 và sau mỗi vòng for lùi dần về 0
+- Ký tự thứ hai lấy bắt đầu từ index length là 6 và sau mỗi vòng for thì tăng dần lên 11
+- Sau mỗi vòng for tăng i lên 2 đơn vị
