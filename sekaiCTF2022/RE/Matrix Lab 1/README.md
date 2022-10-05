@@ -120,4 +120,11 @@ public static boolean solve(final String s) {
         return "oz]{R]3l]]B#50es6O4tL23Etr3c10_F4TD2".equals( encrypt(getArray(transform, 0, 5), 2) + encrypt(getArray(transform, 1, 4), 1) + encrypt(getArray(transform, 2, 3), 0)));
     }
 ```
+Quá trình diễn ra như sau:
+1. Chuỗi `s` 36 ký tự được biến thành ma trận 6x6 được gọi là `transform`
+2. Vòng for lồng nhau hoán đổi vị trí các ký tự trong ma trận
+3. Hàm `getArray` lấy 2 hàng từ ma trận `transform` tạo ra 1 mảng 12 ký tự
+4. Hàm `encrypt` mã hóa mảng 12 ký tự rồi trả về chuỗi 12 ký tự
+5. Cộng 3 chuỗi lại rồi so sánh với chuỗi đã cho.
 
+OK vậy là mình đã phân tích xong chương trình chạy như thế nào. Bây giờ thì viết script để đảo ngược lại quá trình này. Mình chủ yếu dựa vào những đoạn code trên mà viết sao cho nó ngược lại nên chưa được tối ưu lắm. [Script](https://github.com/bananNat/Writeups/tree/main/sekaiCTF2022/RE/Matrix%20Lab%201/Solve)
