@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1666520036 source:c:\users\triet\onedrive\máy tính\ctf\my_re\re01\main.cpp
+	<iostream>
+	<Windows.h>
+
